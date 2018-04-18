@@ -1,7 +1,11 @@
 """lti URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
+<<<<<<< HEAD
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
+=======
+    https://docs.djangoproject.com/en/1.11/topics/http/urls/
+>>>>>>> 9c0d89f19846b2c71a2805b88b574c98dcdd220a
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -22,4 +26,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^lti/', include(django_app_lti.urls, namespace="lti")),
     url(r'^lti-test/$', views.MyLTILaunchView.as_view(), name='lti-test')
+
 ]
